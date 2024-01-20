@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Red+Hat+Display:wght@400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+@layer components{
+    .outlined-btn{
+        @apply text-white bg-transparent px-5 py-2.5 border border-white rounded-full font-semibold hover:text-info hover:border-info transition duration-200
+    }
+    .footerTextHoverEffect{
+        @apply hover:text-info transition-all duration-200
+    }
+    .callingBtn{
+        @apply px-10 py-4 font-bold text-xl rounded-full
+    }
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
